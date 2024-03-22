@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+body{
+    overflow-x: hidden;
+}
+.stylecontainer{
+    position: relative;
+    width: 100%;
+}
+.stylesidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    /* background: linear-gradient(30deg, rgb(210, 176, 176), rgb(46, 41, 41)); */
+    background: #191A19;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.stuDetails {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.sidebar ul li{
+    width: 100%;
+    list-style: none;
+}
+.stylechatBody{
+    height: 45vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stylechat{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, white);
+    background: rgba(0,0,0,0.845);
+} 
+.styleheader i{
+    color: white;
+    padding: 15px;
+}
+.styleheader h3{
+    color: white;
+    padding: 15px;
+}
+.StyleChatbody1{
+    flex: 1;
+    color: black;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px, 15px;
+}
+.stylemessage{
+    background: white;
+    padding: 10px;
+    color: black;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.user_message{
+    margin-left: auto;
+    background: white;
+    color: black;
+}
+.stylefooter form{
+    display: flex;
+}
+.stylefooter form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.stylefeedback1 form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0 , 0, 0.3);
+    color: white;
+    cursor: pointer;
+}
+.stylefeedback1 form button:hover{
+    background: #333;
+    transition: 0.2s ease;
+}
+.stylesidebar ul li:hover{
+    background-color: white;
+}
+.stylesidebar ul li:hover a {
+    color: black;
+}
+.stylesidebar ul li:first-child{
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+.stylesidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.stylesidebar ul li a i{
+   min-width: 60px;
+   font-size: 24px;
+   text-align: center;
+}
+
+.stylesidebar .styletitle{
+    padding: 0 10px;
+    font-size: 20px;
+}
+.stylesidebar .title1{
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.stylemain{
+    position: absolute;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    left: 300px;
+    background: white;
+}
+
+.styletop-bar{
+    position: fixed;
+    height: 60px;
+    width: calc(100% - 300px);
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 10fr 0.4fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    color: #444;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.styletop-bar .stylesearch{
+    position: relative;
+    max-width: 400px;
+}
+
+.stylesearch input{
+    width: 100%;
+    min-width: 128px;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+    background: white;
+}
+
+.stylesearch i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.styleuser{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.styleuser img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.stylecards{
+    margin-top: 60px;
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.stylecards .stylecard{
+    background: #525252;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.stylenumber{
+    font-size: 35px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.stylecard-name{
+    color: white;
+    font-weight: 600;
+}
+.styleicon-box i{
+    font-size: 45px;
+    color: antiquewhite;
+}
+
+.styletables{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+}
+
+.StyleAllRoles{ 
+    min-height: 350px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+}
+
+.styleAllcourses{
+    min-height: 350px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+}
+
+.StyleAllRoles table tbody td:last-child{
+    white-space: nowrap;
+}
+.styleheading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #050404;
+}
+
+.stylebtn{
+   padding: 5px 10px; 
+   background: #313131;
+   color: whitesmoke;
+   text-decoration: none;
+   text-align: center;
+}
+
+table{
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+thead td{
+    font-weight: 600;
+    color: black;
+}
+table tr{
+    border-bottom: 1px solid rgba(0, 0 , 0, 0.1);
+}
+tbody tr:hover{
+    background: #333;
+    color: aliceblue;
+}
+
+table tbody tr:last-child{
+    border-bottom: none;
+}
+td{
+    padding: 9px 5px;
+}
+.logo {
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    height: 40px;
+}
+
+.stylefeedback1{
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 50px auto;
+    padding: 10px;
+    margin-bottom: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.stylefeedback1 h1{
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+
+}
+
+.stylefeedback1 form input,
+form textarea
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+}
+.stylefeedback1 form input:focus,
+form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+
+.stylefeedback1 form button{
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+@media(max-width:1090px){
+    .stylesidebar{
+        width: 60px;
+    }
+    .stylechatBody{
+        display: none;
+    }
+    .stylemain{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .styletop-bar{
+        width: calc(100% - 60px);
+    }
+}
+
+@media(max-width:860px){
+    .stylecards{
+       grid-template-columns: repeat(2, 1fr); 
+    }
+    .styletables{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:530px){
+    .stylecards{
+        grid-template-columns: 1fr; 
+     }
+     .StyleAllRoles td:nth-child(3){
+        display: none;
+     }
+     .StyleAllRoles td:nth-child(2){
+        display: none;
+     }
+}
+
+@media(max-width:420px){
+    .StyleAllRoles, 
+    .styleAllcourses{
+        font-size: 70%;
+        padding: 10px;
+        min-height: 200px;
+    }
+    .stylecards .styletables{
+        padding: 10px;
+    }
+    .stylesearch input{
+        padding: 0 10px;
+    }
+    .styleuser{
+        width: 40px;
+        height: 40px;
+    }
+}

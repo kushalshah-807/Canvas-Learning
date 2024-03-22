@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .swal2-popup {
+    background-color: rgb(49, 49, 49);
+    color: #fff; 
+  }
+  
+  .swal2-title {
+    color: #fff;
+  }
+  
+  .swal2-content {
+    color: #ccc;
+    font-size: 50px;
+  }
+
+.signbody {
+    position: relative;
+}
+
+.signbody {
+    position: relative;
+    background: url('../assets/bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .signuplogo {
+    width: 300px;
+    position: absolute;
+    top: 20px !important;
+    left: 30px !important;
+    z-index: 1;
+  }
+  
+.signbody body {
+    background: rgba(0, 0, 0, 0.9);
+    font-family: sans-serif;
+}
+
+/* .signbody body::after {
+    content: "";
+    background: url('../assets/bg.jpg') no-repeat center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
+
+.signlogin-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .signform {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #b3b3b3;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  .signform::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    /* background: rgba(255,255,255, 0.08); */
+    transform: skewX(-26deg);
+    transform-origin: bottom left;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .signform img {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    background: rgba(255,255,255, 0.8);
+    border-radius: 50%;
+  }
+  .signform h3 {
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -30px;
+  }
+  .signform .signinput-group {
+    position: relative;
+  }
+  .signform .signinput-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .signform .signinput-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    pointer-events: none;
+    transition: .3s ease-out;
+  }
+  .signform .signinput-group input:focus + label,
+  .signform .signinput-group input:valid + label {
+    transform: translateY(-18px);
+    color: whitesmoke;
+    font-size: 1.3rem;
+  }
+  .signsubmit-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .signforgot-pw {
+    color: rgb(233, 227, 227);
+    text-decoration: none;
+  }
+  .signforgot-pw:hover {
+    color: white;
+  }
+  .signup-para {
+    margin-top: 20%;
+    color: #737373;
+  }
+  .signup-link {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .signup-link:hover {
+    text-decoration: underline;
+    
+  }
+  #signforgot-pw {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 1;
+    background: gray;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  #signforgot-pw:target {
+    height: 100%;
+    opacity: 1;
+  }
+  .close {
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .signselect-container {
+    position: relative;
+    width: 200px;
+}
+
+/* Style for the select box */
+.signselect-container select {
+    width: 150%;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    color: #b3b3b3;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+/* Style for the select arrow */
+.signselect-arrow {
+    position: absolute;
+    top: 29%;
+    right: -85px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .signform {
+    padding: 20px;
+  }
+
+  .signup-para {
+    margin-top: 10%;
+  }
+
+  .signuplogo{
+      width: 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+}

@@ -1,0 +1,189 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Register1 {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  
+  .Register1 .formBox {
+    width: 40%;
+    height: 80%;
+    position: center;
+    background-position: center;
+    margin: auto;
+    margin-top: 5%;
+    background: transparent;
+  
+    flex: auto;
+    padding: 5px;
+  }
+  
+  .input {
+    position: center;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+  
+  .SubmitBtn {
+    width: 100%;
+    position: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(to right, #0f79db, #0f79db);
+  }
+  
+  #login {
+    left: 50px;
+  }
+  #register {
+    left: 450px;
+  }
+  
+  
+  
+  
+  select {
+    height: 42px;
+  
+    padding: 10px 15px;
+  
+    line-height: 18px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+   
+    appearance: none;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 300px;
+    position: relative;
+  
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+  select:focus {
+    outline: none;
+  }
+  select::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 45%;
+    margin-top: -4 px;
+    border-top: 8px solid #ccc;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+  }
+  
+  .InspectorSideBar {
+    width: 345px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: DarkSlateGray;
+    z-index: 100;
+    transition: width 300ms;
+    box-shadow: 0px 15px 25px DarkSlateGray;
+  }
+  
+  .ISidebarInside {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 2px;
+  }
+  
+  .InspectorSideBarItems {
+    margin-top: 1rem;
+  }
+  
+  .InspectorSideBarItems li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+  }
+  
+  .InspectorSideBarItems a {
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .InspectorSideBarItems a.active {
+    background: #e7e7dd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    border-radius: 30px 0px 0px 30px;
+  }
+  .InspectorSideBarItems a:hover {
+    background: #ece5e5;
+    color: DarkSlateGray;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0px 0px 30px;
+  }
+  
+  .InspectorSideBarItems label {
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .InspectorSideBarItems label.active {
+    background: #e7e7dd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    border-radius: 30px 0px 0px 30px;
+  }
+  .InspectorSideBarItems label:hover {
+    background: #ece5e5;
+    color: DarkSlateGray;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0px 0px 30px;
+  }
+  
+  .InspectorHome {
+    transition: margin-left 300ms;
+    margin-left: 345px;
+  }
+  
+  .InspectorHome main {
+    margin-top: 50px;
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 90px);
+
+  }
