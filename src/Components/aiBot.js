@@ -58,6 +58,7 @@ function Chat({ socket, username, room, passemail }) {
         messages: [{ role: "assistant", content: string }],
         model: "gpt-3.5-turbo",
       });
+      console.log("hi");
 
       setDataSource((prev) => {
         const temp = [...prev];
